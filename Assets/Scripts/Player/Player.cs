@@ -20,6 +20,13 @@ public class Player : MonoBehaviour
     public float animationDuration = 0.3f;
     public Ease ease = Ease.OutBack;
 
+    [Header("Animation")]
+    public Animator animator;
+    public string boolRun = "Run";
+    public string TriggerJump = "Jump";
+    public float playerSwipeDuration = .1f;
+
+
     private float _currentSpeed;
 
     private void Update()
@@ -34,21 +41,40 @@ public class Player : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftControl))
         {
             _currentSpeed = speedRun;
+            animator.speed = 2f;
         }
         else
         {
             _currentSpeed = speed;
+            animator.speed = 1f;
         }
 
 
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             myRigidBody.velocity = new Vector2(-_currentSpeed, myRigidBody.velocity.y);
+
+            if (myRigidBody.transform.localScale.x != -1)
+            {
+                myRigidBody.transform.DOScaleX(-1, playerSwipeDuration);
+            }
+            animator.SetBool(boolRun, true);
         }
         else if (Input.GetKey(KeyCode.RightArrow))
         {
             myRigidBody.velocity = new Vector2(_currentSpeed, myRigidBody.velocity.y);
+            if (myRigidBody.transform.localScale.x != 1)
+            {
+                myRigidBody.transform.DOScaleX(1, playerSwipeDuration);
+            }
+            myRigidBody.transform.localScale = new Vector3(1, 1, 1);
+            animator.SetBool(boolRun, true);
         }
+        else
+        {
+            animator.SetBool(boolRun, false);
+        }
+
 
         if (myRigidBody.velocity.x > 0)
         {
@@ -66,7 +92,8 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             myRigidBody.velocity = jumpForce * Vector2.up;
-            myRigidBody.transform.localScale = Vector2.one;
+            myRigidBody.transform.localScale = new Vector2(myRigidBody.transform.localScale.x, 1);
+            animator.SetTrigger(TriggerJump);
             DOTween.Kill(myRigidBody.transform);
             HandleScaleJump();
         }
@@ -75,6 +102,6 @@ public class Player : MonoBehaviour
     private void HandleScaleJump()
     {
         myRigidBody.transform.DOScaleY(jumpScaleY, animationDuration).SetLoops(2, LoopType.Yoyo).SetEase(ease);
-        myRigidBody.transform.DOScaleX(jumpScaleX, animationDuration).SetLoops(2, LoopType.Yoyo).SetEase(ease);
+        myRigidBody.transform.DOScaleX(myRigidBody.transform.localScale.x > 0 ? jumpScaleX : -jumpScaleX, animationDuration).SetLoops(2, LoopType.Yoyo).SetEase(ease);
     }
 }
