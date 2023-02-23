@@ -89,13 +89,13 @@ public class Player : MonoBehaviour
 
     private void HandleJump()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow))
         {
             myRigidBody.velocity = jumpForce * Vector2.up;
             myRigidBody.transform.localScale = new Vector2(myRigidBody.transform.localScale.x, 1);
             animator.SetTrigger(TriggerJump);
             DOTween.Kill(myRigidBody.transform);
-            HandleScaleJump();
+          //  HandleScaleJump();
         }
     }
 
