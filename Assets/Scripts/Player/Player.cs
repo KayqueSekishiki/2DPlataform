@@ -95,7 +95,7 @@ public class Player : MonoBehaviour
             myRigidBody.transform.localScale = new Vector2(myRigidBody.transform.localScale.x, 1);
             animator.SetTrigger(TriggerJump);
             DOTween.Kill(myRigidBody.transform);
-          //  HandleScaleJump();
+            //  HandleScaleJump();
         }
     }
 
