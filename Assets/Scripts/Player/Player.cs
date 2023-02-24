@@ -14,13 +14,17 @@ public class Player : MonoBehaviour
     public float speedRun;
     public float jumpForce;
 
-    [Header("Speed Setup")]
-    public float jumpScaleY = 1.5f;
-    public float jumpScaleX = 0.7f;
-    public float animationDuration = 0.3f;
+    [Header("Animation Setup")]
+    //public float jumpScaleY = 1.5f;
+    //public float jumpScaleX = 0.7f;
+    //public float animationDuration = 0.3f;
+    public SOFloat soJumpScaleY;
+    public SOFloat soJumpScaleX;
+    public SOFloat soAnimationDuration;
+
     public Ease ease = Ease.OutBack;
 
-    [Header("Animation")]
+    [Header("Animation Player")]
     public Animator animator;
     public string boolRun = "Run";
     public string triggerJump = "Jump";
