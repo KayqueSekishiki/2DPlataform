@@ -5,10 +5,10 @@ using UnityEngine;
 public class ProjectileBase : MonoBehaviour
 {
     public Vector3 direction;
-    public float timeToDestroy = 2f;
+    public float timeToDestroy = 1f;
 
-    public float side = 1;
-    public int damageAmount = 1;
+    [HideInInspector] public float side = 0.6f;
+    public int bulletDamage = 1;
 
     private void Awake()
     {
@@ -26,7 +26,7 @@ public class ProjectileBase : MonoBehaviour
 
         if (enemy != null)
         {
-            enemy.Damage(damageAmount);
+            enemy.Damage(bulletDamage);
             Destroy(gameObject);
         }
     }

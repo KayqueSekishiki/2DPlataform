@@ -63,6 +63,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   compateTag: Player
+  coinValue: 1
 --- !u!1 &4728279741686555034
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,7 +6,7 @@ using DG.Tweening;
 public class Player : MonoBehaviour
 {
     public Rigidbody2D myRigidBody;
-
+    public HealthBase healthBase;
 
     [Header("Speed Setup")]
     public Vector2 friction = new(.1f, 0);
@@ -23,16 +23,38 @@ public class Player : MonoBehaviour
     [Header("Animation")]
     public Animator animator;
     public string boolRun = "Run";
-    public string TriggerJump = "Jump";
+    public string triggerJump = "Jump";
+    public bool jumping = false;
+    public string triggerDeath = "Death";
     public float playerSwipeDuration = .1f;
 
 
     private float _currentSpeed;
 
+
+    private void Awake()
+    {
+        if (healthBase != null)
+        {
+            healthBase.OnKill += OnPlayerKill;
+        }
+    }
+
+    private void OnPlayerKill()
+    {
+        healthBase.OnKill -= OnPlayerKill;
+        animator.SetTrigger(triggerDeath);
+    }
+
     private void Update()
     {
-        HandleMovement();
+
         HandleJump();
+    }
+
+    private void FixedUpdate()
+    {
+        HandleMovement();
     }
 
     private void HandleMovement()
@@ -54,11 +76,18 @@ public class Player : MonoBehaviour
         {
             myRigidBody.velocity = new Vector2(-_currentSpeed, myRigidBody.velocity.y);
 
+
             if (myRigidBody.transform.localScale.x != -1)
             {
                 myRigidBody.transform.DOScaleX(-1, playerSwipeDuration);
             }
-            animator.SetBool(boolRun, true);
+
+            if (!jumping)
+            {
+                animator.SetBool(boolRun, true);
+            }
+
+
         }
         else if (Input.GetKey(KeyCode.RightArrow))
         {
@@ -68,7 +97,11 @@ public class Player : MonoBehaviour
                 myRigidBody.transform.DOScaleX(1, playerSwipeDuration);
             }
             myRigidBody.transform.localScale = new Vector3(1, 1, 1);
-            animator.SetBool(boolRun, true);
+
+            if (!jumping)
+            {
+                animator.SetBool(boolRun, true);
+            }
         }
         else
         {
@@ -85,23 +118,36 @@ public class Player : MonoBehaviour
             myRigidBody.velocity += friction;
 
         }
+
     }
 
     private void HandleJump()
     {
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetKeyDown(KeyCode.Space) && !jumping || Input.GetKeyDown(KeyCode.UpArrow) && !jumping)
         {
             myRigidBody.velocity = jumpForce * Vector2.up;
             myRigidBody.transform.localScale = new Vector2(myRigidBody.transform.localScale.x, 1);
-            animator.SetTrigger(TriggerJump);
+            animator.SetTrigger(triggerJump);
+            jumping = true;
             DOTween.Kill(myRigidBody.transform);
-            //  HandleScaleJump();
         }
     }
 
-    private void HandleScaleJump()
+
+    public void DestroyMe()
     {
-        myRigidBody.transform.DOScaleY(jumpScaleY, animationDuration).SetLoops(2, LoopType.Yoyo).SetEase(ease);
-        myRigidBody.transform.DOScaleX(myRigidBody.transform.localScale.x > 0 ? jumpScaleX : -jumpScaleX, animationDuration).SetLoops(2, LoopType.Yoyo).SetEase(ease);
+        Destroy(gameObject);
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == 8)
+        {
+            jumping = false;
+        }
+    }
+
+
+
+
 }
