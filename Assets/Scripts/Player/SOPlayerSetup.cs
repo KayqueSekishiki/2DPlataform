@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu]
 public class SOPlayerSetup : ScriptableObject
 {
-    public Animator animator;
+    public Animator player;
     public string playeName; 
 
     [Header("Speed Setup")]

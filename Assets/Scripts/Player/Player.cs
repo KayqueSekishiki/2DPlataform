@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
 
@@ -12,9 +13,11 @@ public class Player : MonoBehaviour
 
     [Header("Setup")]
     public SOPlayerSetup soPlayerSetup;
+    private Animator _currentPlayer;
+
+    public TextMeshProUGUI uiTextPlayerName;
 
     private float _currentSpeed;
-    public Animator _currentPlayer;
 
     private void Awake()
     {
@@ -23,13 +26,19 @@ public class Player : MonoBehaviour
             healthBase.OnKill += OnPlayerKill;
         }
 
-       // _currentPlayer = Instantiate(soPlayerSetup.player, tr);
+        _currentPlayer = Instantiate(soPlayerSetup.player, transform);
+        _currentPlayer.transform.localPosition = new Vector2(0, 0);
     }
 
     private void OnPlayerKill()
     {
         healthBase.OnKill -= OnPlayerKill;
         _currentPlayer.SetTrigger(soPlayerSetup.triggerDeath);
+    }
+
+    private void Start()
+    {
+        uiTextPlayerName.text = soPlayerSetup.playeName;
     }
 
     private void Update()
@@ -60,11 +69,12 @@ public class Player : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             myRigidBody.velocity = new Vector2(-_currentSpeed, myRigidBody.velocity.y);
-
+            uiTextPlayerName.rectTransform.localScale = new Vector3(-1, 1, 1);
 
             if (myRigidBody.transform.localScale.x != -1)
             {
                 myRigidBody.transform.DOScaleX(-1, soPlayerSetup.playerSwipeDuration);
+
             }
 
             if (!soPlayerSetup.jumping)
@@ -77,6 +87,8 @@ public class Player : MonoBehaviour
         else if (Input.GetKey(KeyCode.RightArrow))
         {
             myRigidBody.velocity = new Vector2(_currentSpeed, myRigidBody.velocity.y);
+            uiTextPlayerName.rectTransform.localScale = new Vector3(1, 1, 1);
+
             if (myRigidBody.transform.localScale.x != 1)
             {
                 myRigidBody.transform.DOScaleX(1, soPlayerSetup.playerSwipeDuration);

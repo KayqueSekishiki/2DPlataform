@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class PlayerDestroyHelper : MonoBehaviour
 {
-    public Player player;
+    private Player player;
+
+    private void Start()
+    {
+        player = GetComponentInParent<Player>();
+    }
 
     public void KillPlayer()
     {
