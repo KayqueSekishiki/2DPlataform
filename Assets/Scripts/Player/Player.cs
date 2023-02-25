@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
             healthBase.OnKill += OnPlayerKill;
         }
 
-        // _currentPlayer = Instantiate(soPlayerSetup.player, transform);
+       // _currentPlayer = Instantiate(soPlayerSetup.player, tr);
     }
 
     private void OnPlayerKill()

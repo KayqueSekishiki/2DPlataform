@@ -6,6 +6,9 @@ using Ebac.Core.Singleton;
 public class ItemManager : Singleton<ItemManager>
 {
     public SOInt coins;
+    public SOInt keys;
+    public SOInt specialBullets;
+
 
     private void Start()
     {
@@ -16,16 +19,22 @@ public class ItemManager : Singleton<ItemManager>
     private void Reset()
     {
         coins.value = 0;
+        keys.value = 0;
+        specialBullets.value = 0;
     }
 
     public void AddCoins(int amount)
     {
         coins.value += amount;
-        UpdateCoinsTextUI();
     }
 
-    public void UpdateCoinsTextUI()
+    public void AddKeys(int amount)
     {
-       // UIInGameManager.Instance.UpdateTextCoins(coins.value);
+        keys.value += amount;
     }
+
+    public void AddSpecialBullets(int amount)
+    {
+        specialBullets.value += amount;
+    }  
 }

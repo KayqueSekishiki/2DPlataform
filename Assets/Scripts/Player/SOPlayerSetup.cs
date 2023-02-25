@@ -1,14 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using DG.Tweening;
 
 [CreateAssetMenu]
 public class SOPlayerSetup : ScriptableObject
 {
-
-    public Animator player;
-    public SOString soStringName;
+    public Animator animator;
+    public string playeName; 
 
     [Header("Speed Setup")]
     public Vector2 friction;
