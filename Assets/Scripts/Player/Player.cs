@@ -14,9 +14,6 @@ public class Player : MonoBehaviour
     public SOPlayerSetup soPlayerSetup;
 
     private float _currentSpeed;
-
-    // public Animator animator;
-
     private Animator _currentPlayer;
 
     private void Awake()
@@ -26,7 +23,7 @@ public class Player : MonoBehaviour
             healthBase.OnKill += OnPlayerKill;
         }
 
-        _currentPlayer = Instantiate(soPlayerSetup.player, transform);
+        // _currentPlayer = Instantiate(soPlayerSetup.player, transform);
     }
 
     private void OnPlayerKill()
@@ -93,7 +90,7 @@ public class Player : MonoBehaviour
         }
         else
         {
-          myRigidBody.velocity = new Vector2(0, myRigidBody.velocity.y);
+            myRigidBody.velocity = new Vector2(0, myRigidBody.velocity.y);
             _currentPlayer.SetBool(soPlayerSetup.boolRun, false);
         }
 
