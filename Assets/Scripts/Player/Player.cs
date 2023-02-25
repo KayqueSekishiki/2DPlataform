@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
     public SOPlayerSetup soPlayerSetup;
 
     private float _currentSpeed;
-    private Animator _currentPlayer;
+    public Animator _currentPlayer;
 
     private void Awake()
     {
