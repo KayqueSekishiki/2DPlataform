@@ -1,40 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using DG.Tweening;
+
 
 public class Player : MonoBehaviour
 {
     public Rigidbody2D myRigidBody;
     public HealthBase healthBase;
 
-    [Header("Speed Setup")]
-    public Vector2 friction = new(.1f, 0);
-    public float speed;
-    public float speedRun;
-    public float jumpForce;
-
-    [Header("Animation Setup")]
-    //public float jumpScaleY = 1.5f;
-    //public float jumpScaleX = 0.7f;
-    //public float animationDuration = 0.3f;
-    public SOFloat soJumpScaleY;
-    public SOFloat soJumpScaleX;
-    public SOFloat soAnimationDuration;
-
-    public Ease ease = Ease.OutBack;
-
-    [Header("Animation Player")]
-    public Animator animator;
-    public string boolRun = "Run";
-    public string triggerJump = "Jump";
-    public bool jumping = false;
-    public string triggerDeath = "Death";
-    public float playerSwipeDuration = .1f;
-
+    [Header("Setup")]
+    public SOPlayerSetup soPlayerSetup;
 
     private float _currentSpeed;
 
+    // public Animator animator;
+
+    private Animator _currentPlayer;
 
     private void Awake()
     {
@@ -42,17 +25,18 @@ public class Player : MonoBehaviour
         {
             healthBase.OnKill += OnPlayerKill;
         }
+
+        _currentPlayer = Instantiate(soPlayerSetup.player, transform);
     }
 
     private void OnPlayerKill()
     {
         healthBase.OnKill -= OnPlayerKill;
-        animator.SetTrigger(triggerDeath);
+        _currentPlayer.SetTrigger(soPlayerSetup.triggerDeath);
     }
 
     private void Update()
     {
-
         HandleJump();
     }
 
@@ -66,13 +50,13 @@ public class Player : MonoBehaviour
 
         if (Input.GetKey(KeyCode.LeftControl))
         {
-            _currentSpeed = speedRun;
-            animator.speed = 2f;
+            _currentSpeed = soPlayerSetup.speedRun;
+            _currentPlayer.speed = 2f;
         }
         else
         {
-            _currentSpeed = speed;
-            animator.speed = 1f;
+            _currentSpeed = soPlayerSetup.speed;
+            _currentPlayer.speed = 1f;
         }
 
 
@@ -83,12 +67,12 @@ public class Player : MonoBehaviour
 
             if (myRigidBody.transform.localScale.x != -1)
             {
-                myRigidBody.transform.DOScaleX(-1, playerSwipeDuration);
+                myRigidBody.transform.DOScaleX(-1, soPlayerSetup.playerSwipeDuration);
             }
 
-            if (!jumping)
+            if (!soPlayerSetup.jumping)
             {
-                animator.SetBool(boolRun, true);
+                _currentPlayer.SetBool(soPlayerSetup.boolRun, true);
             }
 
 
@@ -98,28 +82,29 @@ public class Player : MonoBehaviour
             myRigidBody.velocity = new Vector2(_currentSpeed, myRigidBody.velocity.y);
             if (myRigidBody.transform.localScale.x != 1)
             {
-                myRigidBody.transform.DOScaleX(1, playerSwipeDuration);
+                myRigidBody.transform.DOScaleX(1, soPlayerSetup.playerSwipeDuration);
             }
             myRigidBody.transform.localScale = new Vector3(1, 1, 1);
 
-            if (!jumping)
+            if (!soPlayerSetup.jumping)
             {
-                animator.SetBool(boolRun, true);
+                _currentPlayer.SetBool(soPlayerSetup.boolRun, true);
             }
         }
         else
         {
-            animator.SetBool(boolRun, false);
+          myRigidBody.velocity = new Vector2(0, myRigidBody.velocity.y);
+            _currentPlayer.SetBool(soPlayerSetup.boolRun, false);
         }
 
 
         if (myRigidBody.velocity.x > 0)
         {
-            myRigidBody.velocity -= friction;
+            myRigidBody.velocity -= soPlayerSetup.friction;
         }
         else if (myRigidBody.velocity.x < 0)
         {
-            myRigidBody.velocity += friction;
+            myRigidBody.velocity += soPlayerSetup.friction;
 
         }
 
@@ -127,12 +112,12 @@ public class Player : MonoBehaviour
 
     private void HandleJump()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && !jumping || Input.GetKeyDown(KeyCode.UpArrow) && !jumping)
+        if (Input.GetKeyDown(KeyCode.Space) && !soPlayerSetup.jumping || Input.GetKeyDown(KeyCode.UpArrow) && !soPlayerSetup.jumping)
         {
-            myRigidBody.velocity = jumpForce * Vector2.up;
+            myRigidBody.velocity = soPlayerSetup.jumpForce * Vector2.up;
             myRigidBody.transform.localScale = new Vector2(myRigidBody.transform.localScale.x, 1);
-            animator.SetTrigger(triggerJump);
-            jumping = true;
+            _currentPlayer.SetTrigger(soPlayerSetup.triggerJump);
+            soPlayerSetup.jumping = true;
             DOTween.Kill(myRigidBody.transform);
         }
     }
@@ -141,17 +126,15 @@ public class Player : MonoBehaviour
     public void DestroyMe()
     {
         Destroy(gameObject);
+        SceneManager.LoadScene(2);
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.layer == 8)
         {
-            jumping = false;
+            soPlayerSetup.jumping = false;
         }
     }
-
-
-
-
 }
