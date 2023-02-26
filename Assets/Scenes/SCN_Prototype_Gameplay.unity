@@ -199,6 +199,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
 --- !u!1001 &11790097
@@ -272,6 +276,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
 --- !u!1001 &25122575
@@ -345,6 +353,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
 --- !u!4 &32311750 stripped
@@ -1682,6 +1694,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &177404863
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 177404864}
+  m_Layer: 0
+  m_Name: ParentCoin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &177404864
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177404863}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &179283156
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2301,6 +2344,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
 --- !u!1 &246669650
@@ -2411,6 +2458,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
 --- !u!1 &277989438
@@ -2644,6 +2695,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
 --- !u!1 &327338160
@@ -3339,6 +3394,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
 --- !u!1001 &405938766
@@ -3477,6 +3536,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
 --- !u!1 &424646502
@@ -3638,6 +3701,10 @@ PrefabInstance:
       propertyPath: coinValue
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
 --- !u!4 &442435823 stripped
@@ -4755,6 +4822,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
 --- !u!4 &565858481 stripped
@@ -5024,6 +5095,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
 --- !u!1 &636000995
@@ -5181,6 +5256,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
 --- !u!1 &688560939
@@ -5594,6 +5673,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
 --- !u!1 &741459079
@@ -6172,6 +6255,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
 --- !u!1 &1013067429
@@ -7156,6 +7243,10 @@ PrefabInstance:
       propertyPath: coinValue
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
 --- !u!4 &1158395080 stripped
@@ -7835,6 +7926,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
 --- !u!4 &1249669370 stripped
@@ -8492,6 +8587,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
 --- !u!1 &1417331351
@@ -9705,6 +9804,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
 --- !u!4 &1600739312 stripped
@@ -9933,6 +10036,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
 --- !u!1001 &1716511541
@@ -10067,6 +10174,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
 --- !u!1001 &1741165171
@@ -10258,6 +10369,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
 --- !u!1001 &1777761257
@@ -10331,6 +10446,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
 --- !u!1 &1792241352
@@ -10806,6 +10925,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
 --- !u!4 &1839426732 stripped
@@ -10884,6 +11007,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
 --- !u!1 &1846518913
@@ -11130,6 +11257,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
 --- !u!1 &1905459997
@@ -11561,6 +11692,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
 --- !u!1 &1998431181
@@ -11686,6 +11821,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
 --- !u!1 &2042459119
@@ -11881,6 +12020,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
 --- !u!1 &2065386823
@@ -12087,6 +12230,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
 --- !u!1001 &2110913418
@@ -12160,6 +12307,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
 --- !u!1 &2112306898
@@ -12398,5 +12549,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}

@@ -5,6 +5,17 @@ using UnityEngine;
 public class ItemCollectableBase : MonoBehaviour
 {
     public string compateTag = "Player";
+    public ParticleSystem myParticleSystem;
+    public Transform parentCoin;
+
+
+    private void Awake()
+    {
+        if (myParticleSystem != null)
+        {
+            myParticleSystem.transform.SetParent(parentCoin);
+        }
+    }
 
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -17,12 +28,15 @@ public class ItemCollectableBase : MonoBehaviour
 
     protected virtual void Collect()
     {
-        OnCollect();
         gameObject.SetActive(false);
+        OnCollect();
     }
 
     protected virtual void OnCollect()
     {
-
+        if (myParticleSystem != null)
+        {
+            myParticleSystem.Play();
+        }
     }
 }
