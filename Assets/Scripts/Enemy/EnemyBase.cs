@@ -26,14 +26,13 @@ public class EnemyBase : MonoBehaviour
     private void OnEnemyKill()
     {
         healthBase.OnKill -= OnEnemyKill;
+        GetComponent<CapsuleCollider2D>().enabled = false;
         PlayDeathkAnimation();
         Destroy(gameObject, timeToDestroy);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log(collision.transform.name);
-
         var health = collision.gameObject.GetComponent<HealthBase>();
         if (health != null)
         {
