@@ -5,10 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class Crias : MonoBehaviour
 {
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision.transform.name);
-
-        SceneManager.LoadScene(2);
+        if (collision.transform.CompareTag("Player"))
+        {
+            Debug.Log(collision.transform.name);
+            SceneManager.LoadScene(2);
+        }
     }
 }
