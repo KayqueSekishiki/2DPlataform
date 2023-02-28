@@ -6,14 +6,22 @@ public class ItemCollectableBase : MonoBehaviour
 {
     public string compateTag = "Player";
     public ParticleSystem myParticleSystem;
-    public Transform parentCoin;
+    public Transform parentVFXCoins;
+    public Transform parentSFXCoins;
+
+    [Header("Sounds")]
+    public AudioSource audioSource;
 
 
     private void Awake()
     {
         if (myParticleSystem != null)
         {
-            myParticleSystem.transform.SetParent(parentCoin);
+            myParticleSystem.transform.SetParent(parentVFXCoins);
+        }
+        if (audioSource != null)
+        {
+            audioSource.transform.SetParent(parentSFXCoins);
         }
     }
 
@@ -34,9 +42,7 @@ public class ItemCollectableBase : MonoBehaviour
 
     protected virtual void OnCollect()
     {
-        if (myParticleSystem != null)
-        {
-            myParticleSystem.Play();
-        }
+        if (myParticleSystem != null) myParticleSystem.Play();
+        if (audioSource != null) audioSource.Play();
     }
 }

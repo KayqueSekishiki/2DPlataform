@@ -203,6 +203,14 @@ PrefabInstance:
       propertyPath: parentCoin
       value: 
       objectReference: {fileID: 177404864}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentSFXCoins
+      value: 
+      objectReference: {fileID: 547509877}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentVFXCoins
+      value: 
+      objectReference: {fileID: 177404864}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
 --- !u!1001 &11790097
@@ -280,6 +288,14 @@ PrefabInstance:
       propertyPath: parentCoin
       value: 
       objectReference: {fileID: 177404864}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentSFXCoins
+      value: 
+      objectReference: {fileID: 547509877}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentVFXCoins
+      value: 
+      objectReference: {fileID: 177404864}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
 --- !u!1001 &25122575
@@ -355,6 +371,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
       propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentSFXCoins
+      value: 
+      objectReference: {fileID: 547509877}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentVFXCoins
       value: 
       objectReference: {fileID: 177404864}
     m_RemovedComponents: []
@@ -2352,6 +2376,14 @@ PrefabInstance:
       propertyPath: parentCoin
       value: 
       objectReference: {fileID: 177404864}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentSFXCoins
+      value: 
+      objectReference: {fileID: 547509877}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentVFXCoins
+      value: 
+      objectReference: {fileID: 177404864}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
 --- !u!1 &246669650
@@ -2464,6 +2496,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
       propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentSFXCoins
+      value: 
+      objectReference: {fileID: 547509877}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentVFXCoins
       value: 
       objectReference: {fileID: 177404864}
     m_RemovedComponents: []
@@ -2701,6 +2741,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
       propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentSFXCoins
+      value: 
+      objectReference: {fileID: 547509877}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentVFXCoins
       value: 
       objectReference: {fileID: 177404864}
     m_RemovedComponents: []
@@ -3402,6 +3450,14 @@ PrefabInstance:
       propertyPath: parentCoin
       value: 
       objectReference: {fileID: 177404864}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentSFXCoins
+      value: 
+      objectReference: {fileID: 547509877}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentVFXCoins
+      value: 
+      objectReference: {fileID: 177404864}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
 --- !u!1001 &405938766
@@ -3546,6 +3602,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
       propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentSFXCoins
+      value: 
+      objectReference: {fileID: 547509877}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentVFXCoins
       value: 
       objectReference: {fileID: 177404864}
     m_RemovedComponents: []
@@ -3711,6 +3775,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
       propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentSFXCoins
+      value: 
+      objectReference: {fileID: 547509877}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentVFXCoins
       value: 
       objectReference: {fileID: 177404864}
     m_RemovedComponents: []
@@ -4581,6 +4653,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 522315159}
   m_CullTransparentMesh: 1
+--- !u!1 &547509876
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 547509877}
+  m_Layer: 0
+  m_Name: SFXCoins
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &547509877
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547509876}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 724089694}
+  m_RootOrder: 32
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &548960349
 GameObject:
   m_ObjectHideFlags: 0
@@ -4829,6 +4932,14 @@ PrefabInstance:
       propertyPath: parentCoin
       value: 
       objectReference: {fileID: 177404864}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentSFXCoins
+      value: 
+      objectReference: {fileID: 547509877}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentVFXCoins
+      value: 
+      objectReference: {fileID: 177404864}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
 --- !u!4 &565858481 stripped
@@ -4853,6 +4964,39 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4604239983575765932, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
   m_PrefabInstance: {fileID: 2063340157}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &598726519
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 598726521}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &598726521
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598726519}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -80.38739, y: -9.098178, z: 3.282208}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2110386997}
+  - {fileID: 1562496339}
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &613218414
 GameObject:
   m_ObjectHideFlags: 0
@@ -5097,6 +5241,14 @@ PrefabInstance:
       propertyPath: parentCoin
       value: 
       objectReference: {fileID: 177404864}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentSFXCoins
+      value: 
+      objectReference: {fileID: 547509877}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentVFXCoins
+      value: 
+      objectReference: {fileID: 177404864}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
 --- !u!1 &636000995
@@ -5256,6 +5408,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
       propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentSFXCoins
+      value: 
+      objectReference: {fileID: 547509877}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentVFXCoins
       value: 
       objectReference: {fileID: 177404864}
     m_RemovedComponents: []
@@ -5514,6 +5674,7 @@ Transform:
   - {fileID: 1839426732}
   - {fileID: 565858481}
   - {fileID: 177404864}
+  - {fileID: 547509877}
   m_Father: {fileID: 503222525}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5674,6 +5835,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
       propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentSFXCoins
+      value: 
+      objectReference: {fileID: 547509877}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentVFXCoins
       value: 
       objectReference: {fileID: 177404864}
     m_RemovedComponents: []
@@ -6256,6 +6425,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
       propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentSFXCoins
+      value: 
+      objectReference: {fileID: 547509877}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentVFXCoins
       value: 
       objectReference: {fileID: 177404864}
     m_RemovedComponents: []
@@ -7252,6 +7429,14 @@ PrefabInstance:
       propertyPath: parentCoin
       value: 
       objectReference: {fileID: 177404864}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentSFXCoins
+      value: 
+      objectReference: {fileID: 547509877}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentVFXCoins
+      value: 
+      objectReference: {fileID: 177404864}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
 --- !u!4 &1158395080 stripped
@@ -7935,6 +8120,14 @@ PrefabInstance:
       propertyPath: parentCoin
       value: 
       objectReference: {fileID: 177404864}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentSFXCoins
+      value: 
+      objectReference: {fileID: 547509877}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentVFXCoins
+      value: 
+      objectReference: {fileID: 177404864}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
 --- !u!4 &1249669370 stripped
@@ -8594,6 +8787,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
       propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentSFXCoins
+      value: 
+      objectReference: {fileID: 547509877}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentVFXCoins
       value: 
       objectReference: {fileID: 177404864}
     m_RemovedComponents: []
@@ -9650,6 +9851,134 @@ SpriteShapeRenderer:
   m_LocalAABB:
     m_Center: {x: -62.32901, y: 0.805673, z: 0}
     m_Extent: {x: 113.54321, y: 1.9142914, z: 0}
+--- !u!1 &1562496338
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1562496339}
+  - component: {fileID: 1562496340}
+  m_Layer: 0
+  m_Name: Ambience
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1562496339
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562496338}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 598726521}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1562496340
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562496338}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: -8327183491503995493, guid: d361703f0e11d6746a4515f23c9d313c, type: 2}
+  m_audioClip: {fileID: 8300000, guid: dff547ca933eb4d72a80bbb104e16ab7, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1574106123
 GameObject:
   m_ObjectHideFlags: 3
@@ -9828,6 +10157,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
       propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentSFXCoins
+      value: 
+      objectReference: {fileID: 547509877}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentVFXCoins
       value: 
       objectReference: {fileID: 177404864}
     m_RemovedComponents: []
@@ -10066,6 +10403,14 @@ PrefabInstance:
       propertyPath: parentCoin
       value: 
       objectReference: {fileID: 177404864}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentSFXCoins
+      value: 
+      objectReference: {fileID: 547509877}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentVFXCoins
+      value: 
+      objectReference: {fileID: 177404864}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
 --- !u!1001 &1716511541
@@ -10206,6 +10551,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
       propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentSFXCoins
+      value: 
+      objectReference: {fileID: 547509877}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentVFXCoins
       value: 
       objectReference: {fileID: 177404864}
     m_RemovedComponents: []
@@ -15218,6 +15571,14 @@ PrefabInstance:
       propertyPath: parentCoin
       value: 
       objectReference: {fileID: 177404864}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentSFXCoins
+      value: 
+      objectReference: {fileID: 547509877}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentVFXCoins
+      value: 
+      objectReference: {fileID: 177404864}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
 --- !u!1001 &1777761257
@@ -15293,6 +15654,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
       propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentSFXCoins
+      value: 
+      objectReference: {fileID: 547509877}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentVFXCoins
       value: 
       objectReference: {fileID: 177404864}
     m_RemovedComponents: []
@@ -15774,6 +16143,14 @@ PrefabInstance:
       propertyPath: parentCoin
       value: 
       objectReference: {fileID: 177404864}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentSFXCoins
+      value: 
+      objectReference: {fileID: 547509877}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentVFXCoins
+      value: 
+      objectReference: {fileID: 177404864}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
 --- !u!4 &1839426732 stripped
@@ -15854,6 +16231,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
       propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentSFXCoins
+      value: 
+      objectReference: {fileID: 547509877}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentVFXCoins
       value: 
       objectReference: {fileID: 177404864}
     m_RemovedComponents: []
@@ -16104,6 +16489,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
       propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentSFXCoins
+      value: 
+      objectReference: {fileID: 547509877}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentVFXCoins
       value: 
       objectReference: {fileID: 177404864}
     m_RemovedComponents: []
@@ -16566,6 +16959,14 @@ PrefabInstance:
       propertyPath: parentCoin
       value: 
       objectReference: {fileID: 177404864}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentSFXCoins
+      value: 
+      objectReference: {fileID: 547509877}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentVFXCoins
+      value: 
+      objectReference: {fileID: 177404864}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
 --- !u!1 &1998431181
@@ -16693,6 +17094,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
       propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentSFXCoins
+      value: 
+      objectReference: {fileID: 547509877}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentVFXCoins
       value: 
       objectReference: {fileID: 177404864}
     m_RemovedComponents: []
@@ -16892,6 +17301,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
       propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentSFXCoins
+      value: 
+      objectReference: {fileID: 547509877}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentVFXCoins
       value: 
       objectReference: {fileID: 177404864}
     m_RemovedComponents: []
@@ -17104,8 +17521,159 @@ PrefabInstance:
       propertyPath: parentCoin
       value: 
       objectReference: {fileID: 177404864}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentSFXCoins
+      value: 
+      objectReference: {fileID: 547509877}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentVFXCoins
+      value: 
+      objectReference: {fileID: 177404864}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+--- !u!1 &2110386996
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2110386997}
+  - component: {fileID: 2110386999}
+  - component: {fileID: 2110386998}
+  m_Layer: 0
+  m_Name: SFX
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2110386997
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110386996}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 598726521}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2110386998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110386996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b7af4bfe122fc49a697aea1ce6510c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keycode: 112
+  audioSource: {fileID: 2110386999}
+--- !u!82 &2110386999
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110386996}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 7951642618640235250, guid: d361703f0e11d6746a4515f23c9d313c, type: 2}
+  m_audioClip: {fileID: 8300000, guid: e66c05008dfd54b65a39750fb4ca35be, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &2110913418
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17179,6 +17747,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
       propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentSFXCoins
+      value: 
+      objectReference: {fileID: 547509877}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentVFXCoins
       value: 
       objectReference: {fileID: 177404864}
     m_RemovedComponents: []
@@ -27121,6 +27697,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
       propertyPath: parentCoin
+      value: 
+      objectReference: {fileID: 177404864}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentSFXCoins
+      value: 
+      objectReference: {fileID: 547509877}
+    - target: {fileID: 4604239983575765935, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+      propertyPath: parentVFXCoins
       value: 
       objectReference: {fileID: 177404864}
     m_RemovedComponents: []
