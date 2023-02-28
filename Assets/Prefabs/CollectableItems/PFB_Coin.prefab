@@ -44,7 +44,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 7951642618640235250, guid: d361703f0e11d6746a4515f23c9d313c, type: 2}
   m_audioClip: {fileID: 8300000, guid: e66c05008dfd54b65a39750fb4ca35be, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -279,7 +279,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   compateTag: Player
   myParticleSystem: {fileID: 2432184695015532154}
-  parentCoin: {fileID: 0}
+  parentVFXCoins: {fileID: 0}
+  parentSFXCoins: {fileID: 0}
   audioSource: {fileID: 4007459379316697147}
   coinValue: 1
 --- !u!1 &4728279741686555034
