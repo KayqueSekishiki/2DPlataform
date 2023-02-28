@@ -17,7 +17,6 @@ public class SOPlayerSetup : ScriptableObject
     [Header("Animation Player")]
     public string boolRun = "Run";
     public string triggerJump = "Jump";
-    public bool jumping = false;
     public string triggerDeath = "Death";
     public float playerSwipeDuration = .1f;
 }

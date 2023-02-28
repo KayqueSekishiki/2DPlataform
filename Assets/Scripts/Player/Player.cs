@@ -88,7 +88,7 @@ public class Player : MonoBehaviour
 
             }
 
-            if (!soPlayerSetup.jumping)
+            if (IsGrounded())
             {
                 _currentPlayer.SetBool(soPlayerSetup.boolRun, true);
             }
@@ -106,7 +106,7 @@ public class Player : MonoBehaviour
             }
             myRigidBody.transform.localScale = new Vector3(1, 1, 1);
 
-            if (!soPlayerSetup.jumping)
+            if (IsGrounded())
             {
                 _currentPlayer.SetBool(soPlayerSetup.boolRun, true);
             }
@@ -132,40 +132,33 @@ public class Player : MonoBehaviour
 
     private bool IsGrounded()
     {
-        Debug.DrawRay(transform.position, -Vector2.up, Color.magenta, distToGround + spaceToGround);
-        return Physics2D.Raycast(transform.position, -Vector2.up, distToGround + spaceToGround);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, distToGround + spaceToGround);
+        if (hit.collider != null && hit.transform.CompareTag("Jumpable"))
+        {
+            return hit;
+        }
+        else
+        {
+            return false;
+        }
     }
 
     private void HandleJump()
     {
-        Debug.Log(IsGrounded());
-
         if (Input.GetKeyDown(KeyCode.Space) && IsGrounded() || Input.GetKeyDown(KeyCode.UpArrow) && IsGrounded())
         {
-            Debug.Log("pulei");
 
             myRigidBody.velocity = soPlayerSetup.jumpForce * Vector2.up;
             myRigidBody.transform.localScale = new Vector2(myRigidBody.transform.localScale.x, 1);
-            //_currentPlayer.SetTrigger(soPlayerSetup.triggerJump);
-            //soPlayerSetup.jumping = true;
-            //DOTween.Kill(myRigidBody.transform);
-
+            _currentPlayer.SetTrigger(soPlayerSetup.triggerJump);
             PlayJumpVFX();
         }
 
-        //if (Input.GetKeyDown(KeyCode.Space) && !soPlayerSetup.jumping || Input.GetKeyDown(KeyCode.UpArrow) && !soPlayerSetup.jumping)
-        //{
-        //    myRigidBody.velocity = soPlayerSetup.jumpForce * Vector2.up;
-        //    myRigidBody.transform.localScale = new Vector2(myRigidBody.transform.localScale.x, 1);
-        //    _currentPlayer.SetTrigger(soPlayerSetup.triggerJump);
-        //    soPlayerSetup.jumping = true;
-        //    DOTween.Kill(myRigidBody.transform);
-        //}
     }
 
     private void PlayJumpVFX()
     {
-        if(jumpVFX != null)
+        if (jumpVFX != null)
         {
             jumpVFX.Play();
         }
@@ -176,14 +169,5 @@ public class Player : MonoBehaviour
     {
         Destroy(gameObject);
         SceneManager.LoadScene(2);
-
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.layer == 8)
-        {
-            soPlayerSetup.jumping = false;
-        }
     }
 }
