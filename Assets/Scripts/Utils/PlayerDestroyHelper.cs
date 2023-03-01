@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class PlayerDestroyHelper : MonoBehaviour
 {
     private Player player;
-    private string _currentScene;
 
     private void Start()
     {

@@ -21,6 +21,13 @@ public class Player : MonoBehaviour
     public float distToGround;
     public float spaceToGround = .1f;
 
+
+    [Header("Jump SFX")]
+    public AudioSource audioSource;
+    public AudioClip initializeJump;
+    public AudioClip finishJump;
+
+
     public ParticleSystem jumpVFX;
 
     private float _currentSpeed;
@@ -65,16 +72,16 @@ public class Player : MonoBehaviour
     private void HandleMovement()
     {
 
-        if (Input.GetKey(KeyCode.LeftControl))
-        {
-            _currentSpeed = soPlayerSetup.speedRun;
-            _currentPlayer.speed = 2f;
-        }
-        else
-        {
-            _currentSpeed = soPlayerSetup.speed;
-            _currentPlayer.speed = 1f;
-        }
+        //if (Input.GetKey(KeyCode.LeftControl))
+        //{
+        //    _currentSpeed = soPlayerSetup.speedRun;
+        //    _currentPlayer.speed = 2f;
+        //}
+        //else
+        //{
+        //    _currentSpeed = soPlayerSetup.speed;
+        //    _currentPlayer.speed = 1f;
+        //}
 
 
         if (Input.GetKey(KeyCode.LeftArrow))
@@ -152,6 +159,7 @@ public class Player : MonoBehaviour
             myRigidBody.transform.localScale = new Vector2(myRigidBody.transform.localScale.x, 1);
             _currentPlayer.SetTrigger(soPlayerSetup.triggerJump);
             PlayJumpVFX();
+            PlayInitializeJumpSFX();
         }
 
     }
@@ -168,6 +176,25 @@ public class Player : MonoBehaviour
     public void DestroyMe()
     {
         Destroy(gameObject);
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    private void PlayInitializeJumpSFX()
+    {
+        if (audioSource != null)
+        {
+            audioSource.clip = initializeJump;
+            audioSource.Play();
+            Invoke(nameof(PlayFinishJumpSFX), 1.4f);
+        }
+    }
+
+    public void PlayFinishJumpSFX()
+    {
+        if (audioSource != null)
+        {
+            audioSource.clip = finishJump;
+            audioSource.Play();
+        }
     }
 }

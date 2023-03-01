@@ -14,6 +14,11 @@ public class EnemyBase : MonoBehaviour
 
     public float timeToDestroy = 1f;
 
+    [Header("Spawn Reward")]
+    public Transform parentRewards;
+    public Transform prefabReward;
+    public float timeToReward;
+
 
     private void Awake()
     {
@@ -28,6 +33,7 @@ public class EnemyBase : MonoBehaviour
         healthBase.OnKill -= OnEnemyKill;
         GetComponent<CapsuleCollider2D>().enabled = false;
         PlayDeathkAnimation();
+        Invoke(nameof(SpawnReward), timeToReward);
         Destroy(gameObject, timeToDestroy);
     }
 
@@ -54,5 +60,11 @@ public class EnemyBase : MonoBehaviour
     public void Damage(int amount)
     {
         healthBase.Damage(amount);
+    }
+
+    public void SpawnReward()
+    {
+        prefabReward.transform.position = new Vector2(transform.position.x, transform.position.y + 3f);
+        Instantiate(prefabReward, parentRewards);
     }
 }
