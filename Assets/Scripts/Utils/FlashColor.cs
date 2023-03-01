@@ -30,6 +30,7 @@ public class FlashColor : MonoBehaviour
 
         foreach (var s in spriteRenderers)
         {
+            spriteRenderers.ForEach(i => i.color = Color.white);
             _currentTween = s.DOColor(color, duration).SetLoops(6, LoopType.Yoyo);
         }
     }

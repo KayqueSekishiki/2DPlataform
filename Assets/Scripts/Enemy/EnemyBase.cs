@@ -17,6 +17,7 @@ public class EnemyBase : MonoBehaviour
     [Header("Spawn Reward")]
     public Transform parentRewards;
     public Transform prefabReward;
+    public float distanceY = 3f;
     public float timeToReward;
 
 
@@ -64,7 +65,7 @@ public class EnemyBase : MonoBehaviour
 
     public void SpawnReward()
     {
-        prefabReward.transform.position = new Vector2(transform.position.x, transform.position.y + 3f);
+        prefabReward.transform.position = new Vector2(transform.position.x, transform.position.y + distanceY);
         Instantiate(prefabReward, parentRewards);
     }
 }

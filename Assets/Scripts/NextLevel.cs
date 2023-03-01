@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Crias : MonoBehaviour
+public class NextLevel : MonoBehaviour
 {
     public int indexLevel;
 

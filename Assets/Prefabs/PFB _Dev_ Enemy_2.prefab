@@ -94,6 +94,7 @@ MonoBehaviour:
   timeToDestroy: 1
   parentRewards: {fileID: 0}
   prefabReward: {fileID: 4604239983575765932, guid: a9b87bb74fe17774eb7107fe748a9f69, type: 3}
+  distanceY: 3
   timeToReward: 0.5
 --- !u!114 &5254081634820976525
 MonoBehaviour:

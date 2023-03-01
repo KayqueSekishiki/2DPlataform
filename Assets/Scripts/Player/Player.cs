@@ -83,6 +83,8 @@ public class Player : MonoBehaviour
         //    _currentPlayer.speed = 1f;
         //}
 
+        _currentSpeed = soPlayerSetup.speed;
+        _currentPlayer.speed = 1f;
 
         if (Input.GetKey(KeyCode.LeftArrow))
         {
