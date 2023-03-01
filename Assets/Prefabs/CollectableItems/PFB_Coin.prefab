@@ -42,7 +42,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 7951642618640235250, guid: d361703f0e11d6746a4515f23c9d313c, type: 2}
-  m_audioClip: {fileID: 8300000, guid: e66c05008dfd54b65a39750fb4ca35be, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 0.5
   m_Pitch: 1
@@ -223,6 +223,7 @@ GameObject:
   - component: {fileID: 4604239983575765932}
   - component: {fileID: 4604239983575765934}
   - component: {fileID: 4604239983575765935}
+  - component: {fileID: 3240997538973700471}
   m_Layer: 0
   m_Name: PFB_Coin
   m_TagString: Untagged
@@ -282,7 +283,28 @@ MonoBehaviour:
   parentVFXCoins: {fileID: 0}
   parentSFXCoins: {fileID: 0}
   audioSource: {fileID: 4007459379316697147}
+  audioRandomPlayAudioClips: {fileID: 3240997538973700471}
   coinValue: 1
+--- !u!114 &3240997538973700471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4604239983575765931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07bb91d9d1124b14f871714781907b32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClipList:
+  - {fileID: 8300000, guid: 0f579092c76764d8e8df04853e9a2c13, type: 3}
+  - {fileID: 8300000, guid: a3260b6f2f81b443c9a50a4222b21f64, type: 3}
+  - {fileID: 8300000, guid: d0841eebed9944dd3b27de3ee7e6eb88, type: 3}
+  - {fileID: 8300000, guid: 2c6bf6490e5d749bf94eb110314aad49, type: 3}
+  - {fileID: 8300000, guid: a11f29b8ca24247b0bcb1fb9d4169b4b, type: 3}
+  audioSourceList:
+  - {fileID: 4007459379316697147}
 --- !u!1 &4728279741686555034
 GameObject:
   m_ObjectHideFlags: 0

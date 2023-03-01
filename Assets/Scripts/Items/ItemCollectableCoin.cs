@@ -5,6 +5,7 @@ using UnityEngine;
 public class ItemCollectableCoin : ItemCollectableBase
 {
     public int coinValue;
+
     protected override void OnCollect()
     {
         base.OnCollect();

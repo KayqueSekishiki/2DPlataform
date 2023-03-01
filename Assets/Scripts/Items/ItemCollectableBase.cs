@@ -11,6 +11,7 @@ public class ItemCollectableBase : MonoBehaviour
 
     [Header("Sounds")]
     public AudioSource audioSource;
+    public AudioRandomPlayAudioClips audioRandomPlayAudioClips;
 
 
     private void Awake()
@@ -23,6 +24,8 @@ public class ItemCollectableBase : MonoBehaviour
         {
             audioSource.transform.SetParent(parentSFXCoins);
         }
+
+        
     }
 
 
@@ -43,6 +46,10 @@ public class ItemCollectableBase : MonoBehaviour
     protected virtual void OnCollect()
     {
         if (myParticleSystem != null) myParticleSystem.Play();
-        if (audioSource != null) audioSource.Play();
+
+             
+        if (audioSource != null) audioRandomPlayAudioClips.PlayRandom();
     }
+
+ 
 }
