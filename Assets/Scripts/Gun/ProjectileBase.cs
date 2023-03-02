@@ -4,21 +4,25 @@ using UnityEngine;
 
 public class ProjectileBase : MonoBehaviour
 {
-    public Vector3 direction;
+    private Rigidbody2D myRigidbody2D;
+    public Vector2 direction;
+    public float speed = 30f;
+    public int bulletDamage = 1;
     public float timeToDestroy = 1f;
 
-    [HideInInspector] public float side = 0.6f;
-    public int bulletDamage = 1;
+
 
     private void Awake()
     {
+        myRigidbody2D = GetComponent<Rigidbody2D>();
         Destroy(gameObject, timeToDestroy);
     }
 
     private void Update()
     {
-        transform.Translate(direction * side * Time.deltaTime);
+        myRigidbody2D.velocity = direction * speed;
     }
+
 
     private void OnCollisionEnter2D(Collision2D collision)
     {

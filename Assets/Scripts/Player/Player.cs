@@ -86,34 +86,22 @@ public class Player : MonoBehaviour
         _currentSpeed = soPlayerSetup.speed;
         _currentPlayer.speed = 1f;
 
+        uiTextPlayerName.rectTransform.eulerAngles = new(0, 0, 0);
+
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             myRigidBody.velocity = new Vector2(-_currentSpeed, myRigidBody.velocity.y);
-            uiTextPlayerName.rectTransform.localScale = new Vector3(-1, 1, 1);
-
-            if (myRigidBody.transform.localScale.x != -1)
-            {
-                myRigidBody.transform.DOScaleX(-1, soPlayerSetup.playerSwipeDuration);
-
-            }
+            transform.eulerAngles = new Vector3(0, 180, 0);
 
             if (IsGrounded())
             {
                 _currentPlayer.SetBool(soPlayerSetup.boolRun, true);
             }
-
-
         }
         else if (Input.GetKey(KeyCode.RightArrow))
         {
             myRigidBody.velocity = new Vector2(_currentSpeed, myRigidBody.velocity.y);
-            uiTextPlayerName.rectTransform.localScale = new Vector3(1, 1, 1);
-
-            if (myRigidBody.transform.localScale.x != 1)
-            {
-                myRigidBody.transform.DOScaleX(1, soPlayerSetup.playerSwipeDuration);
-            }
-            myRigidBody.transform.localScale = new Vector3(1, 1, 1);
+            transform.eulerAngles = new Vector3(0, 0, 0);
 
             if (IsGrounded())
             {
@@ -125,6 +113,9 @@ public class Player : MonoBehaviour
             myRigidBody.velocity = new Vector2(0, myRigidBody.velocity.y);
             _currentPlayer.SetBool(soPlayerSetup.boolRun, false);
         }
+
+
+
 
 
         if (myRigidBody.velocity.x > 0)

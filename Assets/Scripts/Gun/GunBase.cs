@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class GunBase : MonoBehaviour
 {
+    public GameObject player;
+
     public ProjectileBase prefabProjectile;
     public ProjectileBase prefabSpecialProjectile;
     public Transform positionShoot;
@@ -21,6 +23,11 @@ public class GunBase : MonoBehaviour
     public ItemManager itemManage;
 
 
+    private void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Z))
@@ -37,6 +44,10 @@ public class GunBase : MonoBehaviour
             SpecialShoot();
             if (audioSource != null) audioSource.Play();
         }
+
+        ShootDirection();
+
+
     }
 
     IEnumerator StartShoot()
@@ -54,7 +65,6 @@ public class GunBase : MonoBehaviour
         if (audioSource != null) audioSource.clip = shootSound;
         var projectile = Instantiate(prefabProjectile);
         projectile.transform.position = positionShoot.position;
-        projectile.side = playerSideReference.transform.localScale.x;
     }
 
 
@@ -74,6 +84,21 @@ public class GunBase : MonoBehaviour
         itemManage.specialBullets.value--;
         var projectile = Instantiate(prefabSpecialProjectile);
         projectile.transform.position = positionShoot.position;
-        projectile.side = playerSideReference.transform.localScale.x;
     }
+
+    public void ShootDirection()
+    {
+        if (player.transform.rotation.y == 0)
+        {
+            prefabProjectile.direction = Vector2.right;
+            prefabSpecialProjectile.direction = Vector2.right;
+        }
+        else
+        {
+            prefabProjectile.direction = Vector2.left;
+            prefabSpecialProjectile.direction = Vector2.left;
+        }
+    }
+
+
 }
